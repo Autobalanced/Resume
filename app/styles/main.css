@@ -1,116 +1,159 @@
 /* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #F5F8F9;
-  /*font-family: 'Open Sans', sans-serif;*/
-  /*font-family: 'Roboto', sans-serif;*/
-  font-family: 'Raleway', sans-serif;
-}
 
+body {
+    background-color: #F5C493;
+    font-family: 'Raleway', sans-serif;
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
+
 .header,
 .marketing,
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-
 /* Custom page header */
+
 .header {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 /* Make the masthead heading the same height as the navigation */
+
 .header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
 }
-
 /* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
 
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
 /* Customize container */
+
 @media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+    .container {
+        max-width: 730px;
+    }
 }
 .container-narrow > hr {
-  margin: 30px 0;
+    margin: 30px 0;
 }
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
-
 /* Supporting marketing content */
+
 .marketing {
-  margin: 40px 0;
+    margin: 40px 0;
 }
 .marketing p + h4 {
-  margin-top: 28px;
+    margin-top: 28px;
 }
-
 /* Responsive: Portrait tablets and up */
+
 @media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+    /* Remove the padding we set earlier */
+    
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    
+    .jumbotron {
+        border-bottom: 0;
+    }
 }
-
 /* TODO: Compile LESS variable for easier management. */
-/* Padding and shadows for main content */
-.profile
-{
-  background-color: #FFFFFF;
-  box-shadow: 1px 1px 1px 1px #ECEFF2;
-  margin: 50px 20px 40px 50px;
-  padding: 50px;
-}
+/* Padding and shadows for main content TODO: (DESKTOP ONLY, needs Mobile OPTIMISE) */
 
+.profile {
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 1px 1px #ECEFF2;
+    margin: 20px;
+}
+.profile .row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.greyborder {
+    border-width: 1px 0px 1px 0px;
+    border-color: #ECEFF2;
+    border-style: solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 /* Light drop shadow effect */
-.drop
-{
-  background-color: #FFFFFF;
-  box-shadow: 1px 1px 1px 1px #ECEFF2;
-  margin: 20px 0px 20px 0px;
-}
 
+.drop {
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 1px 1px #ECEFF2;
+    margin: 0px 0px 20px 0px;
+}
 /* Ensure that first elements on the page have the same top margin */
-.first 
-{
-  margin-top: 50px;
-}
 
+.first {
+    margin-top: 20px;
+}
 /* Title of each "card" row section. */
-.title
-{
-  border-bottom-width: 1px;
-  border-bottom-color: #ECEFF2;
-  border-bottom-style: solid;
-  padding: 15px 15px;
+
+.title {
+    border-bottom-width: 1px;
+    border-bottom-color: #ECEFF2;
+    border-bottom-style: solid;
+    padding: 15px 15px;
+}
+/* Align navbar colour scheme with rest of site */
+
+.navbar {
+    background-color: #FFFFFF;
+}
+/* Add padding for main content items */
+
+.padded {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+/* Padding to vertically center brand images*/
+
+.brandimg {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+/* Paper style design */
+
+.paperstyle {
+    margin: 3%;
+    box-shadow: 10px 10px 10px 10px #DAAE83;
+}
+/* Seperate background colour for main container for alternating between default and paperstyle */
+
+.bgcolour {
+    background-color: #F5F8F9;
+}
+/* Minor adjustments to Bootstraps default navbar to remove rounded edges */
+
+.navbar {
+    border-radius: 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.navbar-nav li {
+    border-right-width: 1px;
+    border-right-color: #ECEFF2;
+    border-right-style: solid;
+}
+.navbar-header {
+    border-right-width: 1px;
+    border-right-color: #ECEFF2;
+    border-right-style: solid;
 }
