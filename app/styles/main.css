@@ -1,4 +1,4 @@
-/* Space out content a bit */
+/* Custom fonts */
 
 body {
     background-color: #F5C493;
@@ -91,6 +91,11 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+/* Add some nice padding at the end of each "page" */
+.content-padding
+{
+    padding-bottom: 15px;
+}
 /* Light drop shadow effect */
 
 .drop {
@@ -116,23 +121,29 @@ body {
 .navbar {
     background-color: #FFFFFF;
 }
+.nav-active
+{
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #40B9EA;
+}
 /* Add padding for main content items */
 
 .padded {
     padding-top: 1%;
     padding-bottom: 1%;
 }
-/* Padding to vertically center brand images*/
+/* Padding to vertically center brand images, bottom padding is for mobile devices so content is spaced*/
 
 .brandimg {
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 4%;
+    padding-bottom: 20px; 
 }
 /* Paper style design */
 
 .paperstyle {
     margin: 3%;
-    box-shadow: 10px 10px 10px 10px #DAAE83;
+    box-shadow: 10px 10px 10px 15px #DAAE83;
 }
 /* Seperate background colour for main container for alternating between default and paperstyle */
 
