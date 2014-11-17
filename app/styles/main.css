@@ -121,7 +121,7 @@ body {
 .navbar {
     background-color: #FFFFFF;
 }
-.nav-active
+.nav_active
 {
     border-bottom-width: 2px;
     border-bottom-style: solid;
