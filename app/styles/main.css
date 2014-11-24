@@ -6,9 +6,7 @@ body {
 }
 /* Everything but the jumbotron gets side spacing for mobile first views */
 
-.header,
-.marketing,
-.footer {
+.header, .marketing, .footer {
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -55,9 +53,7 @@ body {
 @media screen and (min-width: 768px) {
     /* Remove the padding we set earlier */
     
-    .header,
-    .marketing,
-    .footer {
+    .header, .marketing, .footer {
         padding-left: 0;
         padding-right: 0;
     }
@@ -70,6 +66,24 @@ body {
     
     .jumbotron {
         border-bottom: 0;
+    }
+
+    /* Custom circle and line CSS (Moved inside desktop only media query) */
+    .circ {
+        border-radius: 50%;
+        border-style: solid;
+        border-color: #E6E6E6;
+        border-width: 1px;
+        height: 10px;
+        max-width: 10px;
+    }
+    /* TODO: Height for this needs to be adjusted to variable height. */
+    .bar {
+        border-width: 1px;
+        border-color: #E6E6E6;
+        border-style: solid;
+        height: 55em;
+        width: 1px;
     }
 }
 /* TODO: Compile LESS variable for easier management. */
@@ -92,8 +106,8 @@ body {
     padding-bottom: 5px;
 }
 /* Add some nice padding at the end of each "page" */
-.content-padding
-{
+
+.content-padding {
     padding-bottom: 15px;
 }
 /* Light drop shadow effect */
@@ -121,8 +135,7 @@ body {
 .navbar {
     background-color: #FFFFFF;
 }
-.nav_active
-{
+.nav_active {
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: #40B9EA;
@@ -137,7 +150,7 @@ body {
 
 .brandimg {
     padding-top: 4%;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
 }
 /* Paper style design */
 
@@ -168,14 +181,13 @@ body {
     border-right-color: #ECEFF2;
     border-right-style: solid;
 }
-
 /* Ugly workaround to Grunt not compiling Google Fonts properly TODO: fix this*/
 /* latin */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), url(https://fonts.gstatic.com/s/raleway/v9/WXRs6bFZChfzCx3pXob5o_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
 
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), url(https://fonts.gstatic.com/s/raleway/v9/WXRs6bFZChfzCx3pXob5o_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
