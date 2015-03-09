@@ -1,5 +1,7 @@
 'use strict';
 
+//NOTE: Requires some sort of scroll % detection (this.currentYPosition() should do the job) or return to update the .nav-active class in "/styles/main.css"
+
 // Create scroll service so that navbar can call elements within other controllers (actually just bypasses controllers and uses pure JS document.getElementById(eID)).
 // Animated and elegant solution found at: http://stackoverflow.com/questions/21749878/angular-js-anchorscroll-smooth-duration
 // Source: http://jsfiddle.net/brettdewoody/y65G5/
